@@ -1,0 +1,45 @@
+.text-area-block {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+
+  textarea {
+    background: #F9F9F9;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    height: 168px;
+    padding: 16px;
+    font-size: 16px;
+    color: #A7A7A7;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-area-block {
+    textarea {
+      height: 130px;
+      padding: 12px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .text-area-block {
+    textarea {
+      height: 100px;
+      padding: 10px;
+      font-size: 10px;
+    }
+  }
+
+}
+
+@media (max-width: 400px) {
+  .text-area-block {
+    textarea {
+      height: 70px;
+    }
+  }
+
+}

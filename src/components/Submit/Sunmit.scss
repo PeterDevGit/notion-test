@@ -1,0 +1,21 @@
+button{
+  width: 100%;
+  color: #fff;
+  height: 56px;
+  border: none;
+  cursor:pointer;
+  font-size: 16px;
+  max-width: 144px;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #DA3F5B;
+  outline: none !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 480px) {
+  button{
+    height: 35px;
+    font-size: 10px;
+  }
+}

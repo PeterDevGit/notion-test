@@ -1,0 +1,174 @@
+.form-container{
+  max-width: 608px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+
+  .form-block{
+    width: 100%;
+    padding: 60px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.header-block{
+  width: 100%;
+  display: block;
+
+  .steps-indicator{
+    max-width: 430px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .in-line{
+    width: 100%;
+    max-width: 160px;
+    height: 2px;
+    background: #E8E8E8;
+    opacity: 0.2;
+    border-radius: 8px;
+  }
+
+  h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .step-round{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    background: #1E34A5;
+    border-radius: 50%;
+
+      &.active-step{
+        background: #DA3F5B;
+      }
+
+  }
+}
+
+input,
+textarea{
+  outline: none;
+
+  &:focus,
+  &:active{
+    border: 1px solid #D6D6D6 !important;
+  }
+
+}
+
+.required-input{
+  color: #F15557;
+  padding-left: 3px;
+}
+
+.error-message{
+  font-size: 12px;
+  color: #F15557;
+  display: block;
+  margin-top: 8px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.error{
+  border: 1px solid #F15557 !important;
+}
+
+@media (max-width: 767px) {
+
+  .form-container {
+    padding: 0 50px;
+
+    .form-block {
+      padding: 40px;
+    }
+  }
+
+  .header-block {
+    .steps-indicator{
+      max-width: 300px;
+      margin: 0 auto 35px auto;
+    }
+
+    h2{
+      font-size: 33px;
+    }
+
+    .in-line {
+      max-width: 100px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .form-container {
+    padding: 0 20px;
+
+    .form-block {
+      padding: 20px;
+    }
+  }
+
+  .header-block {
+    h2{
+      font-size: 25px;
+    }
+
+    .steps-indicator{
+      max-width: 250px;
+    }
+
+    .in-line {
+      max-width: 70px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .form-container {
+    .header-block {
+      h2 {
+        font-size: 20px;
+      }
+
+      .step-round {
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+      }
+
+      .steps-indicator {
+        max-width: 200px;
+        margin: 0 auto 15px auto;
+      }
+
+      .in-line {
+        max-width: 50px;
+      }
+    }
+
+    .error-message{
+      font-size: 8px;
+      margin-top: 3px;
+    }
+  }
+}

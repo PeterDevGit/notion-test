@@ -1,0 +1,66 @@
+.load-file-input{
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.65015px solid #D6D6D6;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0 24px;
+
+  label{
+    float: left;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+
+    input{
+      display: none;
+    }
+
+  .count-files{
+    font-size: 14px;
+    color: #A7A7A7;
+  }
+}
+
+@media (max-width: 767px) {
+  .load-file-input{
+    padding: 0 15px;
+
+    label{
+      font-size: 12px;
+      font-weight: 400;
+
+      img{
+        width: 35px;
+      }
+    }
+    .count-files {
+      font-size: 12px;
+    }
+
+  }
+}
+
+@media (max-width: 480px) {
+  .load-file-input {
+    height: 35px;
+
+    label{
+      font-size: 12px;
+
+      img{
+        width: 30px;
+      }
+    }
+
+    .count-files {
+      font-size: 10px;
+    }
+  }
+}

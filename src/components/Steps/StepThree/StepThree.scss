@@ -1,0 +1,44 @@
+.two-input-row,
+.input-full-row{
+  display: block;
+  width: 100%;
+}
+
+.two-input-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-name,
+.number-people{
+  display: block;
+  max-width: 280px;
+  width: 100%;
+}
+
+.number-people{
+  max-width: 178px;
+}
+
+@media (max-width: 767px) {
+
+  .two-input-row{
+    display: inline-block;
+    width: 100%;
+  }
+  .company-name,
+  .number-people{
+    max-width: 100%;
+  }
+
+  .number-people{
+    margin-top: 30px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .number-people{
+    margin-top: 20px;
+  }
+}

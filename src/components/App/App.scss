@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h2, span, div, input, textarea, p, button{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-input{
+  position: relative;
+}
+
+::placeholder {
+  color: #A7A7A7;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #A7A7A7;
+}
+
+::-ms-input-placeholder {
+  color: #A7A7A7;
+}
+
+@media (max-width: 480px) {
+  ::placeholder {
+    font-size: 10px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 10px;
+  }
+
+  ::-ms-input-placeholder {
+    font-size: 10px;
+  }
+}
